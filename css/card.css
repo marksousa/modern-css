@@ -1,0 +1,101 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    -webkit-box-shadow: 5px 5px 15px 5px #666666;
+    box-shadow: 5px 5px 15px 5px #666666;
+    width: 475px;
+    height: 258px;
+    display: flex;
+    border-radius: 10px;
+}
+
+.card-aside,
+.card-principal {
+    padding: 20px;
+}
+
+.card-aside {
+    background: #603813;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #b29f94, #603813);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #b29f94, #603813); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.card-principal {
+    color: #888;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    color: #222;
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.card-title > a {
+    color: inherit;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: 'Carattere', cursive;
+}
+
+.card-content {
+    flex: 1;
+    margin-bottom: 0;
+    text-align: justify;
+}
+
+.card-foot {
+    display: flex;
+    font-size: .7rem;
+}
+
+.card-foot>div:first-child {
+    margin-right: 1em;
+}
+
+.card-foot>div {
+    display: flex;
+    align-items: center;
+}
+
+.card-foot>div>svg {
+    margin-right: 7px;
+}
+
+.card-tag-button {
+    background: rgba(0, 0, 0, 0.4);
+    color: inherit;
+    text-decoration: none;
+    font-size: 0.7em;
+    padding: 5px 30px;
+    border-radius: 99999px;
+}
+
+.card-avatar {
+    width: 150px;
+}
+
+.card-slug {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
